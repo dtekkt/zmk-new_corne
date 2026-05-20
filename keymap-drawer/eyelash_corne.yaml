@@ -47,8 +47,8 @@ layers:
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
   - NUMFN
   - {t: '$$mdi:keyboard-return$$', h: NAV}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-option$$
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-option$$'}
   NUMFN:
   - F12
   - F1
