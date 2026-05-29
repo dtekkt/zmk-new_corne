@@ -124,19 +124,6 @@
             label = "BASE";
         };
 
-        NUMFN {
-            display-name = "NUMFN";
-            bindings = <
-&kp F12       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                   &mmv MOVE_UP                     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
-&kp CAPSLOCK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &trans
-&trans        &trans     &trans     &trans     &trans     &mkp LCLK  &kp C_MUTE                    &mmv MOVE_DOWN                   &mkp RCLK  &trans     &trans     &trans     &trans     &trans
-                                    &trans     &trans     &trans                                                                    &trans     &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-            label = "NUMFN";
-        };
-
         NAV {
             display-name = "NAV";
             bindings = <
@@ -148,6 +135,19 @@
 
             sensor-bindings = <&scroll_encoder>;
             label = "NAV";
+        };
+
+        NUMFN {
+            display-name = "NUMFN";
+            bindings = <
+&kp F12       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                   &mmv MOVE_UP                     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F11
+&kp CAPSLOCK  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &trans
+&trans        &trans     &trans     &trans     &trans     &mkp LCLK  &kp C_MUTE                    &mmv MOVE_DOWN                   &mkp RCLK  &trans     &trans     &trans     &trans     &trans
+                                    &trans     &trans     &trans                                                                    &trans     &trans     &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+            label = "NUMFN";
         };
 
         CONF {
@@ -168,7 +168,7 @@
         compatible = "zmk,conditional-layers";
 
         Layer3 {
-            if-layers = <1 2>;
+            if-layers = <2 1>;
             then-layer = <3>;
         };
     };
