@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: gpeye                         #new entry
       url-base: https://github.com/GPeye  #new entry
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -15,6 +17,9 @@ manifest:
     - name: hammerbeam-slideshow          #new entry
       remote: gpeye                       #new entry
       revision: main                      #new entry
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: v0.3.0
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
